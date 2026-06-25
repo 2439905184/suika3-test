@@ -159,7 +159,7 @@ name="opt" value1="1" value2="2" value3="3" value4="4" value5="5"]
    [ch left="images/ch/midori/midori-normal.png" center="images/ch/aki/aki-normal.png" right="images/ch/xiaoling/xiaoling-normal.png" time="1.0" method="rule" rule="images/rule/bg_rule_image/001.png"]
    [ch left="images/ch/midori/midori-normal.png" center="images/ch/aki/aki-normal.png" right="images/ch/xiaoling/xiaoling-normal.png" time="1.0" method="melt" rule="images/rule/bg_rule_image/001.png"]
 [elseif lhs="${opt}" op="==" rhs="5"]
-
+   [goto name="testgui"]
 [endif]
 [goto name="testgui"]
 
