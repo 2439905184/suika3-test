@@ -1,0 +1,11 @@
+move {
+    layer: chl;
+    start: 0.0;
+    end: 1.0;
+    from-x: r0;
+    from-y: r0;
+    from-a: 255;
+    to-x: r200;
+    to-y: r0;
+    to-a: 255;
+}

@@ -1,0 +1,23 @@
+rotate {
+    layer: chl;
+    start: 0.0;
+    end: 3.0;
+    from-x: 0;
+    from-y: 400;
+    from-a: 255;
+    to-x: 0;
+    to-y: 400;
+    to-a: 255;
+    # 缩放与旋转中心点
+    center-x: 230;
+    center-y: 230;
+    # 缩放比例
+    from-scale-x: 1.0;
+    from-scale-y: 1.0;
+    to-scale-x: 1.0;
+    to-scale-y: 1.0;
+
+    # 旋转角度（正数为向右，负数为向左）
+    from-rotate: 0.0;
+    to-rotate: -360;
+}
