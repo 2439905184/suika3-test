@@ -1,0 +1,7 @@
+[label name="callmacro"]
+[choose text1="测试无参数宏调用" text2="测试有参数宏调用" name="opt" value1="1" value2="2"]
+[if lhs="${opt}" op="==" rhs="1"]
+   [callmacro name="testmacro"]
+[elseif lhs="${opt}" op="==" rhs="2"]
+   [callmacro name="testmacro2" arg1="parameter1"]
+[endif]

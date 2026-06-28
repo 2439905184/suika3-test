@@ -1,0 +1,8 @@
+[label name="bgm"]
+[choose text1="测试bgm播放" text2="停止bgm播放" name="opt" value1="1" value2="2"]
+[if lhs="${opt}" op="==" rhs="1"]
+   [text text="使用【volume span=1.0】会导致无声"]
+   [bgm file="sound/bgm/start.ogg"]
+[elseif lhs="${opt}" op="==" rhs="2"]
+   [bgm file="none"]
+[endif]

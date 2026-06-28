@@ -1,0 +1,6 @@
+[label name="move"]
+[move time="2.0" center-x="150" center-y="100"]
+[move time="1.0" bg-x="r50"]
+[text text="在旋转的同时逐渐淡出图层"]
+[ch center="images/ch/midori/midori-normal.png"]
+[move time="3.0" name="face" face-alpha="0" face-rotate="r360"]

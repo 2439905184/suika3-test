@@ -1,0 +1,8 @@
+[label name="text"]
+[text text="测试文本标签"]
+[text text="旁白风格（不显示名字）"]
+[text text="The wind was howling through the trees."]
+[text text="角色对话"]
+[text name="Keith" text="I've been waiting for you here in the small room."]
+[text text="voice测试"]
+[text name="Midori" voice="sound/voice/002.ogg" text="Sure! I'd love some fruitcake."]

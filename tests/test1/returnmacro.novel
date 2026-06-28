@@ -1,0 +1,12 @@
+[label name="returnmacro"]
+[defmacro name="returnmacro"]
+   [if lhs="${has_key}" op="==" rhs="false"]
+      [text text="The door is locked."]
+      [returnmacro]
+   [endif]
+   # 只有当 has_key 为 true 时，这部分才会运行
+   [text text="You unlocked the door with the key!"]
+[endmacro]
+
+[set name="has_key" value="false"]
+[callmacro name="returnmacro"]

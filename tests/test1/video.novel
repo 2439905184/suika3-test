@@ -1,0 +1,3 @@
+[label name="video"]
+[text text="测试视频标签"]
+[video file="images/test.mp4"]

@@ -1,0 +1,6 @@
+[label name="wait"]
+[text text="测试等待标签"]
+[text text="等待1秒"]
+[ch center="images/ch/midori/midori-normal.png"]
+[wait time="1.0"]
+[text text="wait之后的代码"]

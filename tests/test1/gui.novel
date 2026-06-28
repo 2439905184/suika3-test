@@ -1,0 +1,5 @@
+[label name="gui"]
+[choose text1="测试gui" text2="进入下一个测试" name="opt" value1="1" value2="2"]
+[if lhs="${opt}" op="==" rhs="1"]
+   [gui file="system/title/title.gui"]
+[endif]
