@@ -1,0 +1,98 @@
+#
+# Remove # to use NVL mode.
+#
+
+#[callmacro name="nvl-mode"]
+
+#
+# Force a locale if you want.
+#  - There are 3 languages implemented in this sample game.
+#  - The language can be switched by the config GUI.
+#  - If not specified here (that is, commented out here), your OS locale will be used.
+#
+
+[config name="game.locale" value="en"]
+#[config name="game.locale" value="zh-cn"]
+#[config name="game.locale" value="ja"]
+
+#
+# Title Screen
+#
+
+# Play a BGM.
+#[volume track="bgm" vol="0.5"]
+[bgm file="sound/bgm/start.ogg"]
+
+# Show a GUI.
+[gui file="system/title/title.gui"]
+
+# Will be jumped to here.
+[label name="start"]
+[volume track="bgm" vol="0.0" span="1.0"]
+
+# todo 测试变量的重写功能，需要100个此类用例
+
+[click]
+
+# Show a background image.
+
+# Finish. The app will be closed.
+
+#
+# ---
+#
+
+#
+# Macro to start NVL mode.
+#
+[defmacro name="nvl-mode"]
+   [text action="hide"]
+   [wait time="0.3"] # Wait for the message box to hide.
+   [config name="game.novel" value="true"]
+   [config name="msgbox.image" value="system/message/msgbox-nvl.png"]
+   [config name="msgbox.x" value="0"]
+   [config name="msgbox.y" value="0"]
+   [config name="msgbox.margin.line" value="60"]
+   [config name="namebox.enable" value="false"]
+   [config name="choose.box1.idle" value="system/choose/nvl.png"]
+   [config name="choose.box1.hover" value="system/choose/nvl.png"]
+   [config name="choose.box1.idle_anime" value="system/choose/idle-nvl.anime"]
+   [config name="choose.box1.hover_anime" value="system/choose/hover-nvl.anime"]
+   [config name="choose.box2.idle" value="system/choose/nvl.png"]
+   [config name="choose.box2.hover" value="system/choose/nvl.png"]
+   [config name="choose.box2.idle_anime" value="system/choose/idle-nvl.anime"]
+   [config name="choose.box2.hover_anime" value="system/choose/hover-nvl.anime"]
+   [config name="choose.box3.idle" value="system/choose/nvl.png"]
+   [config name="choose.box3.hover" value="system/choose/nvl.png"]
+   [config name="choose.box3.idle_anime" value="system/choose/idle-nvl.anime"]
+   [config name="choose.box3.hover_anime" value="system/choose/hover-nvl.anime"]
+   [config name="click.move" value="true"]
+   [text action="clear"]
+[endmacro]
+
+#
+# Macro to go back ADV mode.
+#
+[defmacro name="adv-mode"]
+   [text action="hide"]
+   [wait time="0.3"] # Wait for the message box to hide.
+   [config name="game.novel" value="false"]
+   [config name="msgbox.image" value="system/message/msgbox.png"]
+   [config name="msgbox.x" value="0"]
+   [config name="msgbox.y" value="520"]
+   [config name="msgbox.margin.line" value="40"]
+   [config name="namebox.enable" value="true"]
+   [config name="choose.box1.idle" value="system/choose/idle.png"]
+   [config name="choose.box1.hover" value="system/choose/hover.png"]
+   [config name="choose.box1.idle_anime" value="system/choose/idle.anime"]
+   [config name="choose.box1.hover_anime" value="system/choose/hover.anime"]
+   [config name="choose.box2.idle" value="system/choose/idle.png"]
+   [config name="choose.box2.hover" value="system/choose/hover.png"]
+   [config name="choose.box2.idle_anime" value="system/choose/idle.anime"]
+   [config name="choose.box2.hover_anime" value="system/choose/hover.anime"]
+   [config name="choose.box3.idle" value="system/choose/idle.png"]
+   [config name="choose.box3.hover" value="system/choose/hover.png"]
+   [config name="choose.box3.idle_anime" value="system/choose/idle.anime"]
+   [config name="choose.box3.hover_anime" value="system/choose/hover.anime"]
+   [config name="click.move" value="false"]
+[endmacro]
